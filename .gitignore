@@ -8,3 +8,4 @@
 *_files/
 __pycache__
 templated/data/*
+!templated/data/suzukii_sample_info.tsv
