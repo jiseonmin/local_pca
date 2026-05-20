@@ -7,8 +7,8 @@
 #SBATCH --job-name=lostruct
 
 # Name the output file 
-#SBATCH --output=/scratch/slurm_out/lostruct_%j.out
-#SBATCH --error=/scratch/slurm_err/lostruct_%j.err
+#SBATCH --output=/users/j/m/jmin1/scratch/slurm_out/lostruct_%j.out
+#SBATCH --error=/users/j/m/jmin1/scratch/slurm_err/lostruct_%j.err
 
 module load R
 module load gcc
