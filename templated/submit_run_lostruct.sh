@@ -3,11 +3,13 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --mem=100G
-#SBATCH --time=5:00:00
+#SBATCH --time=1-00:00:00
 #SBATCH --job-name=lostruct
 
 # Name the output file 
-#SBATCH --output=%x_%j.out
+#SBATCH --output=/scratch/slurm_out/lostruct_%j.out
+#SBATCH --error=/scratch/slurm_err/lostruct_%j.err
+
 module load R
 module load gcc
 module load bcftools
