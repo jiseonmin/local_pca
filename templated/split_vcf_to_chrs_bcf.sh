@@ -14,3 +14,4 @@ for chrom in chrX chr2L chr2R chr3 chr4; do
     bcftools index data/${chrom}.bcf
 done
 rm biallelic_no_missing.recode.vcf.gz
+rm biallelic_no_missing.recode.vcf.gz.tbi
