@@ -13,4 +13,11 @@
 module load R
 module load gcc
 module load bcftools
+echo "start analysis with 100 snps window"
 ./run_lostruct.R -i data -t snp -s 100 -I data/suzukii_sample_info.tsv -j 0001
+echo "finished runing with 100 snps window. Start next analysis with 500 snps window"
+
+./run_lostruct.R -i data -t snp -s 500 -I data/suzukii_sample_info.tsv -j 0001
+echo "finished runing with 500 snps window. Start next analysis with 1000 snps window"
+./run_lostruct.R -i data -t snp -s 1000 -I data/suzukii_sample_info.tsv -j 0001
+echo "finished runing with 1000 snps window."
